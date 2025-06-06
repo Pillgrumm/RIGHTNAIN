@@ -4,51 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Night Reign Guide</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #eee;
-      margin: 0;
-      padding: 1rem;
-      line-height: 1.6;
-    }
-
-    h1, h2 {
-      color: #ffd700;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .button {
-      display: block;
-      width: 100%;
-      padding: 1rem;
-      margin: 1.5rem 0;
-      background: #ffd700;
-      border: none;
-      color: #000;
-      font-weight: bold;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-
-    .section {
-      display: none;
-    }
-
-    .visible {
-      display: block;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
@@ -66,7 +22,9 @@
       </ul>
       <p><em>⚠️ Got bell hunter + Giants theme? Bad luck, just salvage the run.</em></p>
 
-      <button class="button" onclick="showDay2()">Continue to Day 2</button>
+      <div class="buttons">
+        <button onclick="showDay2()">Continue to Day 2</button>
+      </div>
     </div>
 
     <div id="day2" class="section">
@@ -81,20 +39,12 @@
       </ul>
       <p><em>🎯 End Day 2 at level 13+ with legendaries and a biome buff. Nightlord becomes manageable.</em></p>
 
-      <button class="button" onclick="showDay1()">← Back to Day 1</button>
+      <div class="buttons">
+        <button onclick="showDay1()">← Back to Day 1</button>
+      </div>
     </div>
   </div>
 
-  <script>
-    function showDay2() {
-      document.getElementById("day1").classList.remove("visible");
-      document.getElementById("day2").classList.add("visible");
-    }
-
-    function showDay1() {
-      document.getElementById("day2").classList.remove("visible");
-      document.getElementById("day1").classList.add("visible");
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
