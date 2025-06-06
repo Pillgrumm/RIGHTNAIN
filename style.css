@@ -1,33 +1,39 @@
 body {
   font-family: Arial, sans-serif;
-  background: #111;
-  color: #eee;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 1rem;
-  line-height: 1.6;
-}
-
-h1, h2 {
-  color: #ffd700;
+  overflow: hidden;
 }
 
 .container {
-  max-width: 600px;
-  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
-.button {
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  margin: 1.5rem 0;
-  background: #ffd700;
-  border: none;
-  color: #000;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 6px;
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #007bff;
+  margin-top: 1.5rem;
+}
+
+ul {
+  text-align: left;
+  padding-left: 1.2rem;
 }
 
 .section {
@@ -38,6 +44,59 @@ h1, h2 {
   display: block;
 }
 
-ul {
-  padding-left: 1.2rem;
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+/* Optional Footer */
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-icon {
+  color: aliceblue;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #81c784;
+}
+
+.footer-icon i {
+  font-size: 2rem;
 }
